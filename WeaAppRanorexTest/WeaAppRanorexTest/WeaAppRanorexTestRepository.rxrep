@@ -1,0 +1,97 @@
+﻿<repository
+id="3d00fbbc-5913-483e-9128-fc5009e57056"
+name="WeaAppRanorexTestRepository">
+	<codegen
+	classname="WeaAppRanorexTestRepository"
+	namespace="WeaAppRanorexTest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="f9026d2e-b0c4-4038-ad22-e1a081b97669"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="a6b19ff5-bf98-4e17-9292-9b2a8b8e8b2c"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="51fc7fde-a496-4819-a50f-7fad5c4cc623"
+			name="Contact"
+			refimgid="4bafceaa-da2f-486d-a302-f3ea477d09e7"
+			refpath="/dom[@domain='localhost']/body/div[1]/div/div[2]/ul/li[3]/a[@innertext='Contact']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost']/body/div[1]//ul/li[3]/a[@innertext='Contact']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="1e68559a-e42f-4096-8d51-43852237c5f7"
+			name="Email"
+			refimgid="5e68643c-8e49-4efa-b26b-7340420738a9"
+			refpath="/dom[@domain='localhost']//input[#'email']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost']//input[#'email']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c7142e98-5384-438d-b4ea-ffa7d361c269"
+			name="Password"
+			refimgid="d89526ea-26fb-49ec-9c34-c3abda2a3e22"
+			refpath="/dom[@domain='localhost']//input[#'password']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost']//input[#'password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ac0c3953-14e4-4294-831f-a4f7c95c3914"
+			name="Submit"
+			refimgid="98d0c37b-d646-4b90-a06c-ccdb1b636313"
+			refpath="/dom[@domain='localhost']/body/div[2]/form/input[@type='submit']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost']//form[@action='http://localhost/WebApp/Home/SignUp']/input[@type='submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,h3tag"
+			capname="h3tag"
+			id="e7052bab-9975-4317-9ddc-59e842c5deed"
+			name="BenvenutoTest"
+			refimgid="e86a71ea-b542-4560-83f1-4e1b8a683865"
+			refpath="/dom[@domain='localhost']/body/div[2]/h3[@innertext='Benvenuto test!!!']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost']/body/div[2]/h3[@innertext='Benvenuto test!!!']
+			</item>
+			<basepath>
+				/dom[@domain='localhost']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

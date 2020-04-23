@@ -1,0 +1,177 @@
+﻿<repository
+id="ba315d47-9f9e-4710-acad-0e63a767c902"
+name="MyTestRepository">
+	<codegen
+	classname="MyTestRepository"
+	namespace="MyTest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="1b62e33c-388c-486f-8588-e14a1e0eb4db"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="64a4410e-0433-49f3-9d1d-525b70f32743"
+		isrooted="True"
+		name="ArtigianOnLineV9000"
+		refpath="/dom[@domain='collaudo.artigiancassa.it']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="6f5a031c-d2ec-45fd-bf40-7b5aa6e3e551"
+			name="Username"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//input[#'username']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//input[#'username']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="29dff912-a0a1-4984-b44d-1ef820e2321c"
+			name="WrapperLogin"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//form[#'FormMaster']/div[7]/div[3]/div[3]/div[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//form[#'FormMaster']/div[7]/div[3]/div[3]/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="61169b47-d2f8-4edd-839e-8d35bdf6f427"
+			name="Password"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//input[#'password']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//input[#'password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="3907c4b0-fa77-4794-9891-779e390e38cd"
+			name="SubmitButton"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//input[#'submitButton']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//input[#'submitButton']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="d93eb1b0-da8b-4435-a51f-66c8ee6fe9a9"
+			name="GefidaModalDialogCancelLink"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//a[#'GefidaModalDialog_cancelLink']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//a[#'GefidaModalDialog_cancelLink']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="fae69544-6695-4292-8873-60f2e247b2ef"
+			name="GefidaModalMessageDialogCancelLink"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//a[#'GefidaModalMessageDialog_cancelLink']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//a[#'GefidaModalMessageDialog_cancelLink']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="0218d74e-d579-4869-8d3b-daa40c7504a2"
+			name="RicercaPratica"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//li[#'Operazioni_ricercaContainer']/a/span[@innertext='ricerca pratica']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//li[#'Operazioni_ricercaContainer']/?/?/span[@innertext='ricerca pratica']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="564aa59f-41e6-4513-9998-a4cb18f8647e"
+			name="BodyBodyBodyHypCerca"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//a[#'Body_Body_Body_hypCerca']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//a[#'Body_Body_Body_hypCerca']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="aaf1a226-0d73-4b1a-a408-18269e0308fa"
+			name="Image"
+			refpath="/dom[@domain='collaudo.artigiancassa.it']//div[#'Body_Body_Body_pnlRisultato']/div[1]/div/table/tbody/tr[7]/td[1]/input[@type='image']"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//div[#'Body_Body_Body_pnlRisultato']//table/tbody/tr[7]/td[1]/input[@type='image']
+			</item>
+			<item
+			capname="divtag"
+			id="ebbf2335-0086-4857-a311-50e74a6e305b"
+			name="ModalPopupWaitingPanel"
+			searchtimeout="30000ms">
+				/dom[@domain='collaudo.artigiancassa.it']//div[#'ModalPopupWaitingPanel']
+			</item>
+			<basepath>
+				/dom[@domain='collaudo.artigiancassa.it']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="2cb6b4ab-96d4-412d-98fa-f0d5b2a3491c"
+		isrooted="True"
+		name="AffidatarioV9000MozillaFirefox"
+		refpath="/form[@title='Affidatario v.9.0.0.0 - Mozilla Firefox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="288d010c-f312-4dba-acf5-c1db973f3f6c"
+			name="PushButton"
+			refpath="/form[@title>'Affidatario v.9.0.0.0 - Mozilla']/toolbar[@accessiblename='Browser tabs']/button[3]"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Affidatario v.9.0.0.0 - Mozilla']/toolbar[@accessiblename='Browser tabs']/button[3]
+			</item>
+			<basepath>
+				/form[@title&gt;'Affidatario v.9.0.0.0 - Mozilla']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAM0SURBVDhPjZJtTJVlHMbvEDwaEIrycjhGBxBk
+CEGcmLoOKocQRHGKmbN5ghRfllqipqzEQ41qWEprOv1gOadz4pwTphsm4kxhprE0hYkv4DLgnCmC
+Ok14eO5f93k4ffJL13btv3u7r2v/l0v8X8ia9HbpTpzqe76MtmDnOG/NSPw+Icl2aLfF0XA3uPCG
+JordWtGPe930TUf2ztRlvTlHVo0LNkT/ofnVNendUbNOZk2oKLcl7RlKyaxh0ZJdBBXdRnz2jLPn
+s+BxvuI85CMHemNInU86jN9Di/b2WB20p9hpyp2Be000X32yDrG6F1E+SNPlKdDngP4CVQtUJ1nI
+1sDFhviccPm3hhfeHoxPh3cmwtJw2GqivKSM10tbERUam05sg4cx8GgO9KpOHsxm8H6abhg0+G9e
+1WXOR09IBYf6VBIKlQGwIpy+nRb8vtQQVR462y3gTgRPrqo50J2N/DOsUpwbuaHZbclFTnoTZllh
+9VjY7sfBtQsYv/w6YvM/iMohRlXexNOizDsj4X4m3LOjX415KBoDNnT0+Ay07FhuzYvn5w/zSJt7
+hMD32hAlD5TJc8RGD+9+ux8aBVwPgXYb8o9Jujgzoszzt3mOMcK9jFTuzJhM2cwVxE87TmTurwQt
+bMXP2YVw3iLyozq4pAy8vGyG3+IQp4Sr/m7YQgYmvs3T9GTItqJvDOJ0aSpXd8Zw81A0eSt/IjCn
+npyVLmhR4gYvRyN/idDESbHNdS2kmCdWOyRPRuZZ6V9mpvvzUFoqrKz/4GNsWfswv1VN0+E4OKvE
+dYq1Acha0xFRK76IOT9yvdYVNZuhhDTjlC/et7Bjejb5CaXYYl3MzyymufoNOK2ExxRrBPKgn5QH
+hJFe1YXrmxtjnDy2qu0mpqgx1DmdKg+bAo2LsEeJ9ise8HGfQP/O9MQQe3FULBpxxn9LbUd4Ic9j
+VerUKIbJkghYqzZePgqqlNEPSlz9CnK7v65tDZ7rkw/Dm8gLpk+/7owo0A0Tbyd2lcyCCcPpXDWW
+Z8vCeFocdUWWvhbqk72Mi6Z1cR1hC3b0R9vbtPi0AVKSGJgaq/VMs/51LSN5i++bD0L8CxPl/oex
+UVo7AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

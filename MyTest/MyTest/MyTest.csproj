@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{13EA4610-6435-4CA2-855D-7F5F40DF5E9D}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyTest</RootNamespace>
+    <AssemblyName>MyTest</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>0d8e9669-0243-409c-b5ed-600d224e85e3</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Bootstrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Core.Resolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Cef.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.ChromeWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Delphi.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.FirefoxWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Flex.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Java.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Msaa.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Qt.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.RawText.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Sap.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Uia.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Win32.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <HintPath>..\..\..\..\..\Documents\Ranorex\RanorexStudio Projects\WeaAppRanorexTest\WeaAppRanorexTest\ExternalDLL\Ranorex.Plugin.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4c5b348b-41cb-4ed9-bed8-a6b1fcfc46f1</id>
+    </Compile>
+    <Compile Include="CloseBrowser.cs">
+      <BoundTo>2403a6cf-0f9b-4c64-b0ce-6fa6c71f3923</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3900206e-4551-4942-984b-180aaa6525a0</id>
+    </Compile>
+    <Compile Include="CloseBrowser.UserCode.cs">
+      <BoundTo>2403a6cf-0f9b-4c64-b0ce-6fa6c71f3923</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c5dd88a0-3bf0-4446-b55c-a41e0a88b4ff</id>
+    </Compile>
+    <Compile Include="MyTestRepository.cs">
+      <BoundTo>0d8e9669-0243-409c-b5ed-600d224e85e3</BoundTo>
+      <DependentUpon>MyTestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>9d0fba88-9c73-4483-8e88-3f58b69e56c6</id>
+    </Compile>
+    <Compile Include="OpenBrowser.cs">
+      <BoundTo>e74d3096-a5a5-4b4e-a837-6e74349f14ab</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a4f3816-cd0c-4955-9ac2-c72ba9456e42</id>
+    </Compile>
+    <Compile Include="OpenBrowser.UserCode.cs">
+      <BoundTo>e74d3096-a5a5-4b4e-a837-6e74349f14ab</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>083f023f-5cbe-4613-9d67-bba2d76ae7c4</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>c94d5626-8334-408b-92a5-83e5740f6744</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>9b0b7844-78eb-49e5-af8c-8ce81f066ea7</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>304adf63-f27a-453a-8f5c-b7f1b28d4e7c</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>9b0b7844-78eb-49e5-af8c-8ce81f066ea7</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d19da844-7499-4f5a-bfd9-290889bd9f95</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>57e29697-54e3-4cbd-b93a-a2f8f56029ff</id>
+    </None>
+    <None Include="CloseBrowser.rxrec">
+      <BoundTo>0d8e9669-0243-409c-b5ed-600d224e85e3</BoundTo>
+      <id>2403a6cf-0f9b-4c64-b0ce-6fa6c71f3923</id>
+      <recordtableid>cc7fb016-d068-42f9-95c4-e78e7c5fb9b2</recordtableid>
+    </None>
+    <None Include="MyTestRepository.rximg">
+      <BoundTo>0d8e9669-0243-409c-b5ed-600d224e85e3</BoundTo>
+      <DependentUpon>MyTestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8812aec5-879f-47ae-bd3b-2ec8b7b1db2a</id>
+    </None>
+    <None Include="MyTestRepository.rxrep">
+      <id>0d8e9669-0243-409c-b5ed-600d224e85e3</id>
+      <repoid>ba315d47-9f9e-4710-acad-0e63a767c902</repoid>
+      <reporootid>1b62e33c-388c-486f-8588-e14a1e0eb4db</reporootid>
+    </None>
+    <None Include="OpenBrowser.rxrec">
+      <BoundTo>0d8e9669-0243-409c-b5ed-600d224e85e3</BoundTo>
+      <id>e74d3096-a5a5-4b4e-a837-6e74349f14ab</id>
+      <recordtableid>3b1deb0b-9197-4477-a8bb-67e6f1ce0ba8</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <id>9b0b7844-78eb-49e5-af8c-8ce81f066ea7</id>
+      <recordtableid>88fbff7b-5284-478a-8adf-f829dcd877ff</recordtableid>
+      <BoundTo>0d8e9669-0243-409c-b5ed-600d224e85e3</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTest.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a545e7cf-5c34-457b-b8c9-1a573a5ab227</id>
+    </Content>
+    <Content Include="MyTest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b9f62ee8-474d-4fd2-99cb-def14305f7a1</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9190e174-7352-46f4-8cfa-249e3e12e25c"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="WeaAppRanorexTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="67b86952-52c2-4e13-ad51-004a8ed18647">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a6b19ff5-bf98-4e17-9292-9b2a8b8e8b2c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='firefox']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="3d00fbbc-5913-483e-9128-fc5009e57056"
+	name="WeaAppRanorexTestRepository"
+	relativepath="WeaAppRanorexTestRepository.rxrep">
+		<codegen
+		classname="WeaAppRanorexTestRepository"
+		namespace="WeaAppRanorexTest">
+		</codegen>
+		<rootfolder
+		id="f9026d2e-b0c4-4038-ad22-e1a081b97669"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

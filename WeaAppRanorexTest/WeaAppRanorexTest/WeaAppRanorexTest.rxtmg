@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="WeaAppRanorexTest"
+      id="297f3c37-f9ff-4bd4-88b4-5c739e7c70d1"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="WeaAppRanorexTest"
+      id="297f3c37-f9ff-4bd4-88b4-5c739e7c70d1"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

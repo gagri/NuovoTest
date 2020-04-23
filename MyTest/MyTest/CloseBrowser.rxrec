@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cc7fb016-d068-42f9-95c4-e78e7c5fb9b2"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="MyTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="10000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="38ab7a11-1173-4723-929f-d46a3a3597b1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="64a4410e-0433-49f3-9d1d-525b70f32743"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='collaudo.artigiancassa.it']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ba315d47-9f9e-4710-acad-0e63a767c902"
+	name="MyTestRepository"
+	relativepath="MyTestRepository.rxrep">
+		<codegen
+		classname="MyTestRepository"
+		namespace="MyTest">
+		</codegen>
+		<rootfolder
+		id="1b62e33c-388c-486f-8588-e14a1e0eb4db"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

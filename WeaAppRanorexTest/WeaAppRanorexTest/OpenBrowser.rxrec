@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fcd26cfd-c970-423f-8e43-b2146258d6ec"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="WeaAppRanorexTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="firefox"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				http://localhost/WebApp/
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="3d00fbbc-5913-483e-9128-fc5009e57056"
+	name="WeaAppRanorexTestRepository"
+	relativepath="WeaAppRanorexTestRepository.rxrep">
+		<codegen
+		classname="WeaAppRanorexTestRepository"
+		namespace="WeaAppRanorexTest">
+		</codegen>
+		<rootfolder
+		id="f9026d2e-b0c4-4038-ad22-e1a081b97669"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
